@@ -6,7 +6,7 @@
         <title>CheeseStick</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/punchAiden.css">
         <script src="js/main.js" defer></script>
     </head>
 
@@ -26,10 +26,8 @@
         </nav>
 
         <main>
-            <div id="video">
-                <h1>CheeseStick</h1>
-                <p>Watch the latest episode!</p>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/zAzFfrR3nLk?si=bfFSEWjyvjoZ2Wek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="aiden">
+                <div id="aiden-img" onclick="punchAiden(this)"  onmouseover="scareAiden(this)"  onmouseleave="unScareAiden(this)"></div>
             </div>
         </main>
 
@@ -39,5 +37,27 @@
             <div id="footer-border"></div>
             <div id="footer-bg"></div>
         </footer>
+
+        <script>
+            document.getElementById("aiden-img").style.content = "url('/images/aiden-normal.png')"
+
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            async function punchAiden(img) {
+                img.style.content = "url('/images/aiden-punched.png')";
+                await sleep(50);
+                img.style.content = "url('/images/aiden-scared.png')";
+            }
+
+            function scareAiden(img) {
+                img.style.content = "url('/images/aiden-scared.png')"
+            }
+
+            function unScareAiden(img) {
+                img.style.content = "url('/images/aiden-normal.png')"
+            }
+        </script>
     </body>
 </html>
