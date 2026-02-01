@@ -3,6 +3,53 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    /* background-image: linear-gradient(to bottom, hsl(176, 88%, 70%), hsl(238, 88%, 13%)); */
+}
+
+#content {
+    /* height: 100%; */
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, hsl(203, 86%, 15%), hsl(252, 92%, 23%));
+    /* background-color: hsl(247, 100%, 24%); */
+}
+
+@keyframes moveUp {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 300px -300px;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -300px 300px;
+    }
+}
+
+#bg1,
+#bg2 {
+    position: fixed;
+    z-index: -1;
     height: 100%;
     width: 100%;
+    background-image: url("/images/pink-square.png");
+    opacity: 70%;
+}
+
+#bg1 {
+    animation: moveUp 5s linear infinite;
+}
+
+#bg2 {
+    animation: moveDown 5s linear infinite;
 }

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Tomorrow";
+    src: url('/fonts/Tomorrow-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +11,60 @@
 
 html,
 body {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     width: 100%;
+    font-family: "Tomorrow";
+    color: white;
+}
+
+html {
+    background-image: linear-gradient(to bottom, hsl(214, 100%, 17%), hsl(225, 100%, 13%));
+    /* background-color: black; */
+    /* background-image: url("/images/taco.jpg"); */
 }
 
 main {
+    height: auto;
+    min-height: 100vh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    /* box-sizing: border-box; */
+}
+
+#bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
     height: 100%;
+    width: 100%;
+    background-image: url('/images/retro-screen2.png');
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Font */
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+    color: hsl(227, 39%, 67%);
 }
 
 /* Nav */
@@ -33,13 +87,36 @@ main {
 #navbar {
     position: fixed;
     width: 100%;
-    height: 100px;
-    top: 0;
+    height: 150px;
+    top: 15px;
+    padding-left: 20px;
     display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 50px;
+    /* transition: top 0.3s; */
+    /* background-color: hsl(186, 100%, 60%); */
+    transform: rotate(1deg);
+}
+
+#navbar-bg {
+    position: fixed;
+    width: 110%;
+    left: -5px;
+    height: 150px;
+    top: -20px;
+    display: flex;
+    box-sizing: border-box;
     align-items: center;
     gap: 50px;
     transition: top 0.3s;
-    background-color: hsl(40, 100%, 60%);
+    /* background-color: hsl(252, 92%, 23%); */
+    /* background-color: hsl(309, 85%, 38%); */
+    background-color: hsl(203, 86%, 15%);
+
+    /* background-image: url('/images/retro-screen2.png'); */
+    /* background-color: hsl(186, 100%, 60%); */
+    transform: rotate(-1deg);
 }
 
 /* Footer */
@@ -49,7 +126,7 @@ footer {
     height: 200px;
     justify-content: center;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 70px;
     box-sizing: border-box;
     color: white;
     z-index: 1;
@@ -71,10 +148,13 @@ footer {
 #footer-bg {
     position: absolute;
     bottom: 0;
+    left: -10px;
     height: calc(100% - 30px);
-    width: calc(100% - 40px);
-    transform: translateY(45px) rotate(-2.5deg);
-    background-color: hsl(4, 100%, 60%);
+    width: 110%;
+    transform: translateY(45px) rotate(2.5deg);
+    /* background-color: hsl(318, 100%, 40%); */
+    background-color: hsl(252, 92%, 23%);
+    /* background-image: url('/images/retro-screen2.png'); */
     z-index: -2;
 }
 
