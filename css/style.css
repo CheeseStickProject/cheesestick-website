@@ -19,8 +19,8 @@ body {
 }
 
 html {
-    background-image: linear-gradient(to bottom, hsl(214, 100%, 17%), hsl(225, 100%, 13%));
-    /* background-color: black; */
+    /* background-image: linear-gradient(to bottom, hsl(214, 100%, 17%), hsl(225, 100%, 13%)); */
+    background-color: hsl(0, 0%, 20%);
     /* background-image: url("/images/taco.jpg"); */
 }
 
@@ -43,6 +43,7 @@ main {
     height: 100%;
     width: 100%;
     background-image: url('/images/retro-screen2.png');
+    background-size: 150px;
     user-select: none;
     pointer-events: none;
 }
@@ -112,7 +113,8 @@ a:hover {
     transition: top 0.3s;
     /* background-color: hsl(252, 92%, 23%); */
     /* background-color: hsl(309, 85%, 38%); */
-    background-color: hsl(203, 86%, 15%);
+    /* background-color: hsl(203, 86%, 15%); */
+    background-color: hsl(0, 88%, 44%);
 
     /* background-image: url('/images/retro-screen2.png'); */
     /* background-color: hsl(186, 100%, 60%); */
@@ -138,7 +140,7 @@ footer {
     top: 0;
     height: 100%;
     width: 100%;
-    transform: translateY(45px) rotate(-2.5deg);
+    transform: translateY(45px) rotate(-1.5deg);
     background-image: url('/images/footer-border.png');
     background-size: 100% 300px;
     background-repeat: no-repeat;
@@ -151,9 +153,10 @@ footer {
     left: -10px;
     height: calc(100% - 30px);
     width: 110%;
-    transform: translateY(45px) rotate(2.5deg);
+    transform: translateY(45px) rotate(1.5deg);
     /* background-color: hsl(318, 100%, 40%); */
-    background-color: hsl(252, 92%, 23%);
+    /* background-color: hsl(252, 92%, 23%); */
+    background-color: hsl(0, 88%, 44%);
     /* background-image: url('/images/retro-screen2.png'); */
     z-index: -2;
 }
