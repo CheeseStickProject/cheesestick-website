@@ -1,0 +1,47 @@
+.section-title {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    /* background-color: red; */
+
+}
+
+.person > img {
+    width: 100%;
+    height: auto;
+    border: 5px solid black;
+    border-color: hsl(0, 88%, 44%);
+    /* border-radius: 3px; */
+}
+
+.person > h1 {
+    padding: 10px 0;
+}
+
+.person > p {
+    padding-top: 10px;
+    text-align: left;
+}
+
+main > section {
+    /* background-color: cyan; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    /* background-color: hsl(0, 0%, 5%);
+    box-shadow: 0 0 50px 50px hsl(0, 0%, 5%); */
+}
+
+#animators {
+
+}
+

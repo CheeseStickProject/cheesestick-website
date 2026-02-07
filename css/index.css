@@ -24,6 +24,10 @@
     /* background-color: hsl(247, 100%, 24%); */
 }
 
+#content h1 {
+    padding: 20px 0;
+}
+
 #content p {
     width: 640px;
     margin: 20px 0;

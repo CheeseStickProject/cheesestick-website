@@ -80,7 +80,6 @@ a:hover {
     cursor: pointer;
     user-select: none;
     display: none;
-
 }
 
 #navbar {
@@ -107,8 +106,7 @@ a:hover {
     box-sizing: border-box;
     align-items: center;
     gap: 50px;
-    transition: top 0.3s;
-    transition: right 0.3s;
+    transition: top 0.3s, right 0.3s;
     background-color: hsl(0, 88%, 44%);
     transform: rotate(-1deg);
 }
